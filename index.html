@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Best Free UTM Campaign Link Builder Online 2026</title>
+<meta name="description" content="Free online UTM link builder for Asia. Create tracked URLs for Google Ads, Facebook, and marketing campaigns instantly in 1 click without registration.">
+<style>
+body{font-family:'Segoe UI',sans-serif;background:#f4f6f9;margin:0;padding:20px;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.box{background:#fff;padding:25px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.05);max-width:440px;width:100%}
+h2{text-align:center;margin-top:0;color:#1e293b}
+input{width:100%;padding:10px;margin:8px 0;border:1px solid #cbd5e1;border-radius:6px;box-sizing:border-box;font-size:14px;color:#334155}
+button{width:100%;padding:12px;background:#0284c7;border:none;color:#fff;font-weight:bold;border-radius:6px;cursor:pointer;margin-top:10px}
+button:hover{background:#0369a1}
+.res{margin-top:20px;padding:15px;display:none;background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;word-break:break-all}
+.ad{display:none;margin-top:15px;min-height:100px;text-align:center}
+</style>
+</head>
+<body>
+<div class="box">
+<h2>UTM Link Builder</h2>
+<input type="url" id="url" placeholder="Website URL (https://...)">
+<input type="text" id="src" placeholder="Campaign Source (utm_source: google, facebook)">
+<input type="text" id="med" placeholder="Campaign Medium (utm_medium: cpc, banner, email)">
+<input type="text" id="cam" placeholder="Campaign Name (utm_campaign)">
+<button onclick="makeUTM()">Generate Tracked Link</button>
+<div id="resBox" class="res"><strong>Generated Link:</strong><div id="out" style="margin-top:8px;background:#fff;padding:8px;border:1px solid #cbd5e1;border-radius:4px;font-size:13px;color:#0369a1;user-select:all"></div><button onclick="copyUTM()" style="background:#16a34a;margin-top:8px;padding:6px;font-size:13px;border:none;color:#fff;font-weight:bold;border-radius:4px;cursor:pointer;width:100%">Copy Link</button></div>
+<div id="ads" class="ad"><div id="container-e8c895e6c70ade8e4ef4a72354f42e97"></div></div>
+</div>
+<script>
+function showAds(){
+const c=document.getElementById('ads');
+if(!window.adScriptLoaded){
+window.atOptions={'key':'e8c895e6c70ade8e4ef4a72354f42e97','format':'iframe','height':90,'width':728,'params':{}};
+var s=document.createElement('script');s.type='text/javascript';s.async=!0;
+s.src=['https://','bagelstoppage.','com/','e8c895e6c70ade8e4ef4a72354f42e97/','invoke.js'].join('');c.appendChild(s);window.adScriptLoaded=!0
+}c.style.display='block'
+}
+function makeUTM(){
+let u=document.getElementById('url').value.trim();
+const s=document.getElementById('src').value.trim(),m=document.getElementById('med').value.trim(),c=document.getElementById('cam').value.trim();
+if(!u||!s||!m||!c){alert('Please fill in all mandatory fields');return}
+if(!/^https?:\/\//i.test(u))u='https://'+u;
+try{
+let o=new URL(u);o.searchParams.set('utm_source',s);o.searchParams.set('utm_medium',m);o.searchParams.set('utm_campaign',c);
+document.getElementById('out').innerText=o.toString();
+document.getElementById('resBox').style.display='block';showAds()
+}catch(e){alert('Invalid URL address entered')}
+}
+function copyUTM(){
+const t=document.getElementById('out').innerText;
+navigator.clipboard.writeText(t).then(()=>alert('Link copied successfully!'))
+}
+</script>
+<div style="display:none!important;visibility:hidden!important;opacity:0!important;width:0!important;height:0!important;position:absolute!important;top:-9999px!important;">
+<h2>Create tracking links online free — Campaign URL builder India, Singapore</h2>
+<p>Create error-free URLs for web analytics and Google Analytics tracking with our free marketing utility. Reliable parameter attachment in 1 click.</p>
+<ul>
+<li>utm parameter generator online free india</li>
+<li>campaign url builder singapore digital marketing</li>
+<li>generate tracking links without registration malaysia</li>
+</ul>
+</div>
+</body>
+</html>
